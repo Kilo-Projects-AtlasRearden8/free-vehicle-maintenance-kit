@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vehicle Service Log — Asdale Dynamics, LLC</title>
+<style>
+  @page { margin: 0.5in; size: letter portrait; }
+  @media print { .no-print { display: none; } body { font-size: 10pt; } }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4; color: #111; margin: 0; padding: 0; }
+  .container { max-width: 8.5in; margin: 0 auto; padding: 0.5in; }
+  header { text-align: center; border-bottom: 2px solid #222; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+  .subtitle { margin: 0.25rem 0 0; font-size: 0.9rem; color: #444; }
+  .vehicle-info { display: flex; gap: 2rem; margin-bottom: 1rem; font-size: 0.95rem; }
+  .vehicle-info label { font-weight: 600; }
+  .vehicle-info span { border-bottom: 1px solid #999; min-width: 180px; display: inline-block; padding-bottom: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th, td { border: 1px solid #ccc; padding: 0.35rem 0.4rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; font-weight: 600; white-space: nowrap; }
+  tr:nth-child(even) td { background: #fafafa; }
+  td.empty { min-height: 1.2rem; }
+  .codes { margin-top: 1.5rem; font-size: 0.8rem; line-height: 1.6; }
+  .codes strong { display: block; margin-bottom: 0.25rem; }
+  .footer { margin-top: 2rem; text-align: center; font-size: 0.7rem; color: #666; border-top: 1px solid #ddd; padding-top: 0.5rem; }
+  .checkbox { width: 1em; height: 1em; accent-color: #222; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Vehicle Service Log</h1>
+    <p class="subtitle">Routine maintenance record — print and keep in your glove compartment</p>
+  </header>
+
+  <div class="vehicle-info">
+    <div><label>Vehicle:</label> <span></span></div>
+    <div><label>VIN / Plate:</label> <span></span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:8%">Date</th>
+        <th style="width:9%">Odometer</th>
+        <th style="width:12%">Service Type</th>
+        <th style="width:22%">Details / Parts Used</th>
+        <th style="width:7%">Cost</th>
+        <th style="width:12%">Performed By</th>
+        <th style="width:15%">Next Due (mi/date)</th>
+        <th style="width:15%">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Pre-filled example rows (optional) -->
+      <tr><td></td><td></td><td>Oil Change</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Tire Rotation</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Brake Inspect</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Fluid Flush</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Filter Replace</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Belt/Hose</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Battery</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td>Alignment</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <!-- Blank rows for writing -->
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="codes">
+    <strong>Service Type Codes:</strong>
+    OC = Oil Change &nbsp;|&nbsp; TR = Tire Rotation &nbsp;|&nbsp; BI = Brake Inspection &nbsp;|&nbsp; FF = Fluid Flush &nbsp;|&nbsp; FR = Filter Replace &nbsp;|&nbsp; BH = Belt/Hose &nbsp;|&nbsp; BT = Battery &nbsp;|&nbsp; AL = Alignment &nbsp;|&nbsp; OT = Other
+  </div>
+
+  <div class="footer">
+    Free Vehicle Maintenance Kit &copy; 2026 Asdale Dynamics, LLC — MIT License — <a href="https://github.com/AsdaleDynamics" target="_blank">AsdaleDynamics</a>
+  </div>
+</div>
+</body>
+</html>

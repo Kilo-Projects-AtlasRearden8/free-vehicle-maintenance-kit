@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maintenance Schedule — Asdale Dynamics, LLC</title>
+<style>
+  @page { margin: 0.5in; size: letter portrait; }
+  @media print { .no-print { display: none; } body { font-size: 10pt; } }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.35; color: #111; margin: 0; padding: 0; }
+  .container { max-width: 8.5in; margin: 0 auto; padding: 0.5in; }
+  header { text-align: center; border-bottom: 2px solid #222; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+  .subtitle { margin: 0.25rem 0 0; font-size: 0.9rem; color: #444; }
+  .vehicle-info { display: flex; gap: 2rem; margin-bottom: 1rem; font-size: 0.95rem; }
+  .vehicle-info label { font-weight: 600; }
+  .vehicle-info span { border-bottom: 1px solid #999; min-width: 180px; display: inline-block; padding-bottom: 2px; }
+  h2 { font-size: 1.1rem; border-bottom: 1px solid #aaa; padding-bottom: 0.2rem; margin-top: 1.5rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin-bottom: 1rem; }
+  th, td { border: 1px solid #ccc; padding: 0.25rem 0.3rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; font-weight: 600; white-space: nowrap; }
+  tr:nth-child(even) td { background: #fafafa; }
+  td.center { text-align: center; }
+  .checkbox { width: 1em; height: 1em; accent-color: #222; }
+  .tip { margin-top: 1rem; font-size: 0.8rem; line-height: 1.5; padding: 0.5rem; background: #f8f8f8; border-left: 3px solid #222; }
+  .footer { margin-top: 2rem; text-align: center; font-size: 0.7rem; color: #666; border-top: 1px solid #ddd; padding-top: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Maintenance Schedule</h1>
+    <p class="subtitle">Manufacturer-recommended intervals (consult your owner's manual)</p>
+  </header>
+
+  <div class="vehicle-info">
+    <div><label>Vehicle:</label> <span></span></div>
+    <div><label>VIN / Plate:</label> <span></span></div>
+  </div>
+
+  <h2>Quick-Reference Intervals (Typical)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:16%">Item</th>
+        <th style="width:13%">Mileage Interval</th>
+        <th style="width:11%">Time Interval</th>
+        <th style="width:12%">Last Done</th>
+        <th style="width:12%">Next Due</th>
+        <th style="width:6%">Done?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Engine Oil & Filter</strong></td><td>5,000-7,500 mi</td><td>6-12 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Tire Rotation</td><td>5,000-7,500 mi</td><td>6 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Cabin Air Filter</td><td>15,000-30,000 mi</td><td>12-24 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Engine Air Filter</td><td>15,000-30,000 mi</td><td>12-24 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Brake Fluid Flush</td><td>30,000-45,000 mi</td><td>2-3 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Coolant Flush</td><td>60,000-100,000 mi</td><td>5 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Transmission Fluid</td><td>60,000-100,000 mi</td><td>5 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Power Steering Fluid</td><td>50,000-75,000 mi</td><td>3-5 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Spark Plugs</td><td>60,000-100,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Serpentine Belt</td><td>60,000-100,000 mi</td><td>5-7 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Timing Belt</td><td>60,000-100,000 mi</td><td>7-10 yr</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Brake Pads (front)</td><td>30,000-70,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Brake Pads (rear)</td><td>40,000-80,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Brake Rotors</td><td>50,000-70,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Battery Test</td><td>-</td><td>12 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Wheel Alignment</td><td>15,000-30,000 mi</td><td>12-24 mo</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Fuel Filter</td><td>30,000-60,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>PCV Valve</td><td>60,000-90,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Differential Fluid</td><td>30,000-60,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td>Transfer Case Fluid</td><td>30,000-60,000 mi</td><td>-</td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Custom / Additional Items</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:18%">Item</th>
+        <th style="width:12%">Mileage Interval</th>
+        <th style="width:10%">Time Interval</th>
+        <th style="width:12%">Last Done</th>
+        <th style="width:12%">Next Due</th>
+        <th style="width:6%">Done?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="center"><input type="checkbox" class="checkbox"></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Seasonal Checks</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:10%">Season</th>
+        <th style="width:30%">Check</th>
+        <th style="width:6%">Done?</th>
+        <th style="width:10%">Date</th>
+        <th style="width:44%">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Spring</td><td>Wi per blades</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Spring</td><td>Tire pressure (cold)</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Spring</td><td>A/C performance</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Spring</td><td>Battery terminals</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Summer</td><td>Coolant level/condition</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Summer</td><td>Tire tread depth</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Summer</td><td>Brake inspection</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Fall</td><td>Heater/defroster</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Fall</td><td>Wi per blades</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Fall</td><td>Battery test</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Fall</td><td>Tire pressure (cold)</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Winter</td><td>Antifreeze strength</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Winter</td><td>Winter tires?</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Winter</td><td>Emergency kit</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+      <tr><td>Winter</td><td>Block heater (if applicable)</td><td class="center"><input type="checkbox" class="checkbox"></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip">
+    <strong>Tip:</strong> Write the next due mileage/date immediately after each service. Review this page at every oil change. Consult your owner's manual for exact specifications—this schedule shows typical intervals only.
+  </div>
+
+  <div class="footer">
+    Free Vehicle Maintenance Kit &copy; 2026 Asdale Dynamics, LLC — MIT License — <a href="https://github.com/AsdaleDynamics" target="_blank">AsdaleDynamics</a>
+  </div>
+</div>
+</body>
+</html>

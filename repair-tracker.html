@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vehicle Repair Tracker — Asdale Dynamics, LLC</title>
+<style>
+  @page { margin: 0.5in; size: letter portrait; }
+  @media print { .no-print { display: none; } body { font-size: 10pt; } }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4; color: #111; margin: 0; padding: 0; }
+  .container { max-width: 8.5in; margin: 0 auto; padding: 0.5in; }
+  header { text-align: center; border-bottom: 2px solid #222; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+  .subtitle { margin: 0.25rem 0 0; font-size: 0.9rem; color: #444; }
+  .vehicle-info { display: flex; gap: 2rem; margin-bottom: 1rem; font-size: 0.95rem; }
+  .vehicle-info label { font-weight: 600; }
+  .vehicle-info span { border-bottom: 1px solid #999; min-width: 180px; display: inline-block; padding-bottom: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+  th, td { border: 1px solid #ccc; padding: 0.3rem 0.35rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; font-weight: 600; white-space: nowrap; }
+  tr:nth-child(even) td { background: #fafafa; }
+  td.empty { min-height: 1.1rem; }
+  .symptoms { margin-top: 1.5rem; font-size: 0.75rem; line-height: 1.5; columns: 2; column-gap: 1.5rem; }
+  .symptoms strong { display: block; margin-bottom: 0.25rem; }
+  .symptoms ul { margin: 0; padding-left: 1.2rem; }
+  .symptoms li { margin: 0.15rem 0; }
+  .footer { margin-top: 2rem; text-align: center; font-size: 0.7rem; color: #666; border-top: 1px solid #ddd; padding-top: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Vehicle Repair Tracker</h1>
+    <p class="subtitle">Unexpected repairs, parts, labor, and warranty tracking</p>
+  </header>
+
+  <div class="vehicle-info">
+    <div><label>Vehicle:</label> <span></span></div>
+    <div><label>VIN / Plate:</label> <span></span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:7%">Date</th>
+        <th style="width:8%">Odometer</th>
+        <th style="width:12%">Symptom / Issue</th>
+        <th style="width:12%">Diagnosis</th>
+        <th style="width:13%">Parts Replaced</th>
+        <th style="width:7%">Parts Cost</th>
+        <th style="width:7%">Labor Cost</th>
+        <th style="width:7%">Total Cost</th>
+        <th style="width:11%">Shop / Mechanic</th>
+        <th style="width:6%">Warranty?</th>
+        <th style="width:10%">Notes / Invoice #</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+      <tr><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td class="empty"></td></tr>
+    </tbody>
+  </table>
+
+  <div class="symptoms">
+    <strong>Common Symptoms Quick-Reference:</strong>
+    <ul>
+      <li><strong>Engine:</strong> rough idle, misfire, check engine light, hard start, stalling, overheating</li>
+      <li><strong>Transmission:</strong> slipping, harsh shifts, delayed engagement, fluid leak, whining</li>
+      <li><strong>Brakes:</strong> squeal, grind, pedal vibration, pull to side, soft pedal, warning light</li>
+      <li><strong>Suspension/Steering:</strong> clunk, wander, uneven tire wear, bounce, noise over bumps</li>
+      <li><strong>Electrical:</strong> dead battery, dim lights, accessory failure, parasitic draw, blown fuses</li>
+      <li><strong>Exhaust:</strong> loud noise, smell, rattling, failed emissions, smoke</li>
+      <li><strong>Cooling:</strong> leak, overheating, low coolant, sweet smell, steam</li>
+      <li><strong>Other:</strong> ________________________________________</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    Free Vehicle Maintenance Kit &copy; 2026 Asdale Dynamics, LLC — MIT License — <a href="https://github.com/AsdaleDynamics" target="_blank">AsdaleDynamics</a>
+  </div>
+</div>
+</body>
+</html>
